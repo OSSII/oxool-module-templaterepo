@@ -1,0 +1,88 @@
+<nav>
+    <div class="nav nav-tabs" role="tablist">
+        <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#a1" type="button" role="tab" aria-selected="true" _="Module overview"></button>
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#a2" type="button" role="tab" aria-selected="false" _="Client MAC address management"></button>
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#a3" type="button" role="tab" aria-selected="false" _="Template source IP address management"></button>
+    </div>
+</nav>
+
+<div class="tab-content">
+    <!-- Module overview -->
+    <div id="a1" class="active tab-pane">
+        <strong>API</strong>
+        <p _="This API needs to be used with the template center extension module."></p>
+
+        <strong _="How to use the API"></strong>
+        <ol>
+            <li _="Manage website upload template center through ODFAPI."></li>
+            <li _="Install the template center extension module on the client side."></li>
+            <li _="Stay in sync with templates in Template Center."></li>
+        </ol>
+
+        <img class="img-responsive" src="images/templaterepo.png"></img>
+    </div>
+
+    <!-- MClient MAC address management -->
+    <div id="a2" class="tab-pane">
+        <div class="card border-3">
+            <div class="card-header list-group-item-primary bg-gradient">
+                <div class="fs-6 fw-bold" _="List of Mac addresses"></div>
+            </div>
+            <div class="card-body row g-3">
+                 <!--- 允許 Mac 位址設定--->
+                <div class="col-md-12 p-3 bg-light border border-3 rounded">
+                    <div class="host-list" id="macList"></div>
+                </div>
+                <!-------------->
+            </div>
+        </div>
+    </div>
+    <!-- Template source IP address management -->
+    <div id="a3" class="tab-pane">
+        <div class="card border-3">
+            <div class="card-header list-group-item-success bg-gradient">
+                <div class="fs-6 fw-bold" _="List of IP addresses"></div>
+            </div>
+            <div class="card-body row g-3">
+                 <!--- 允許 IP 位址設定--->
+                <div class="col-md-12 p-3 bg-light border border-3 rounded">
+                    <div class="host-list" id="ipList"></div>
+                </div>
+                <!-------------->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 編輯主機資料的 Dialog -->
+<form class="needs-validation" id="editForm" novalidate>
+    <div class="modal fade" id="editSourceDialog">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="hostEditTitle"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body row g-3">
+                    <div class="col-md-8">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="host-value" required>
+                            <label class="form-label" for="host-value" _="Source"></label>
+                            <div class="invalid-feedback" _="Source must be entered"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="host-desc">
+                            <label class="form-label" for="host-desc" _="Description"></label>
+                          </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-sm rounded-pill" data-bs-dismiss="modal" id="editFormCancel" _="Cancel"></button>
+                    <button type="button" class="btn btn-primary btn-sm rounded-pill" id="editFormOK" _="OK"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,29 @@
+{
+	"Template repository": "範本中心",
+	"Module overview": "模組概覽",
+	"Client MAC address management": "用戶端 MAC 位址管理",
+	"Template source IP address management": "範本來源 IP 管理",
+	"This API needs to be used with the template center extension module.":
+	"此 API 需搭配範本中心擴充模組來使用。",
+	"How to use the API": "API 使用方法",
+	"Manage website upload template center through ODFAPI.":
+	"透過 ODFAPI 管理網站上傳範本中心。",
+	"Install the template center extension module on the client side.":
+	"在用戶端安裝範本中心擴充模組。",
+	"Stay in sync with templates in Template Center.":
+	"和範本中心的範本保持同步。",
+	"List of Mac addresses": "Mac 位址列表",
+	"Add Mac address": "新增 Mac 位址",
+	"List of IP addresses": "IP 位址列表",
+	"Add IP address": "新增 IP 位址",
+	"Add source": "新增來源",
+	"Edit": "編輯",
+	"Edit source": "編輯來源",
+	"Delete": "刪除",
+	"Delete source": "刪除來源",
+	"Source": "來源",
+	"Description": "說明",
+	"OK": "確定",
+	"Cancel": "取消",
+	"Source must be entered": "來源必須輸入"
+}
