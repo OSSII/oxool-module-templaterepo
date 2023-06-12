@@ -292,12 +292,6 @@ private:
         bool allowed = false; // 預設不允許
 
         std::string clientAddress = socket->clientAddress();
-
-        // 是不是 IPV4
-        bool isIPv4 = clientAddress.find_first_of("::ffff:") == 0;
-        if (isIPv4)
-            clientAddress = clientAddress.substr(7);
-
         if (clientAddress == "::1" || clientAddress == "127.0.0.1")
             allowed = true;
         else
